@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@400;500;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Montserrat', sans-serif;
+}
+
+body{
+    line-height: 1.8;
+    font-size: 18px;
+    background-color:#5F9EA0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container{
+    background: #fff;
+    /* background-color: #f6f7f8; */
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.125);
+    width: 100%;
+    max-width: 500px;
+    padding: 33px;
+    margin: 20px auto;
+}
+
+.container h1{
+    font-size: 25px;
+    font-weight: 700;
+    color: 	#5F9EA0;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    align-items: center;
+
+    margin-left: 50px;
+}
+
+form{
+    width: 100%;
+}
+
+.form-row{
+    margin-bottom: 18px;
+    display: flex;
+    align-items: center;
+}
+
+.form-row label{
+    width: 200px;
+    color: #757575;
+    font-size: 15px;
+    margin-right: 10px;
+}
+
+.form-row input{
+    width: 100%;
+    outline: none;
+    font-size: 15px;
+    /* border: 1px solid #d5d5d5; */
+    border: 1px solid lavender;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    padding: 8px 10px;
+}
+
+.form-row textarea{
+    resize: none;
+
+    height: 125px;
+    border-radius: 3px;
+    margin-bottom: 5px;
+    border: 1px solid #757575;
+    padding: 10px;
+}
+
+.form-row .custom_select{
+    width: 100%;
+    height: 40%;
+
+    position: relative;
+}
+
+.form-row select{
+    width: 100%;
+    height: 100%;
+    font-size: 15px;
+    -webkit-appearance: none;
+    padding: 8px 10px;
+    border: 1px solid #d5d5d5;
+    border-radius: 3px;
+    outline: none;
+}
+
+.form-row .custom_select::before{
+    position: absolute;
+    content: "";
+    top: 12px;
+    right: 10px;
+    border: 8px solid;
+    border-color: #d5dbd9 transparent transparent transparent;
+    pointer-events: none;
+}
+
+.form-row input:focus, 
+.form-row textarea:focus,
+.form-row select:focus{
+    border: 1px solid #6495ED;
+}
+
+.form-row p{
+    font-size: 14px;
+    color: #757575;
+}
+
+.form-row .check{
+    height: 15px;
+    width: 15px;
+
+    position: relative;
+    display: flex;
+    cursor: pointer;
+}
+
+.form-row input[type="checkbox"]{
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+
+.form-row button{
+    width: 100%;
+    padding: 10px 40px;
+    font-size: 15px;
+    border: 0;
+    color:#fff;
+    background:#5F9EA0;
+    cursor: pointer;
+    border-radius: 3px;
+    outline: none;
+}
+
+.form-row button:hover{
+    background:  #7492B9;
+}
+
+
+
+
+@media (max-width: 420px){
+    .form-row{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .form-row label{
+        margin-bottom: 6px;;
+    }
+}
+
+
+
+
+
+
+
